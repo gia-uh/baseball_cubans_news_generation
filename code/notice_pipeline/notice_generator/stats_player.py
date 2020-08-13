@@ -102,7 +102,10 @@ class Runs(Action):
             return fill_template(random.choice(self._templates['estadisticas']['jugador']['carreras_anotadas']['accion'][pos][c]), d)
         x = 'limpias'
         if er != cant:
-            x = 'sucias'
+            if er != 0:
+                x = 'medio'
+            else:
+                x = 'sucias'
         return fill_template(random.choice(self._templates['estadisticas']['jugador']['carreras_anotadas']['accion'][pos][c][x]), d)
 
 # Entity
