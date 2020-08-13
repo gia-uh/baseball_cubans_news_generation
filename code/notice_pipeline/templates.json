@@ -105,13 +105,11 @@
                 "entidad":{
                     "0":[
                         "ninguna carrera anotada",
-                        "ninguna anotación",
-                        "ninguno le pisó el home"
+                        "ninguna anotación"
                     ],
                     "1":[
                         "una carrera anotada",
-                        "una anotación",
-                        "unos solo le pisó el home"
+                        "una anotación"
                     ],
                     ">1":[
                         "{{ R }} carreras anotadas",
@@ -134,18 +132,26 @@
                             "no toleró carreras",
                             "no toleró anotaciones",
                             "no dejó que entraran carreras",
-                            "no dejó que entraran anotaciones"
+                            "no dejó que entraran anotaciones",
+                            "ninguno le pisó el home"
                         ],
                         "1":{
                             "limpias":[
                                 "permitió una carrera, la cual fue limpia",
                                 "permitió una carrera limpia",
-                                "permitió una anotación limpia"
+                                "permitió una anotación limpia",
+                                "uno solo le pisó el home"
                             ],
                             "sucias":[
                                 "permitió una carrera que fue sucia",
                                 "permitió una carrera sucia",
-                                "permitió una anotación sucia"
+                                "permitió una anotación sucia",
+                                "uno solo le pisó el home"
+                            ],
+                            "medio":[
+                                "permitió una carrera",
+                                "permitió una anotación",
+                                "uno solo le pisó el home"
                             ]
                         },
                         ">1":{
@@ -156,6 +162,10 @@
                             "sucias":[
                                 "permitió {{ R }}, todas sucias",
                                 "permitió {{ R }} sucias"
+                            ],
+                            "medio":[
+                                "permitió {{ R }}",
+                                "{{ R }} peloteros le pisaron el home"
                             ]
                         }
                     }
