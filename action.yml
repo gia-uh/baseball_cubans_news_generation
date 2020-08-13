@@ -1,0 +1,9 @@
+name: "Python Container Action Template"
+description: "Get started with Python Container actions"
+author: "Jacob Tomlinson"
+outputs:
+  myOutput:
+    description: "Output from the action"
+runs:
+  using: "docker"
+  image: "Dockerfile"
