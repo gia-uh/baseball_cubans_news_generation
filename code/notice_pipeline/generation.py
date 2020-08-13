@@ -651,7 +651,7 @@ class New_Templates(News):
         for p in paragraphs:
             complete_new += p + '\n\n'
 
-        summary = summarize(complete_new, word_count=70)
+        summary = summarize(complete_new, word_count=80)
 
         return {
             'title': title,
