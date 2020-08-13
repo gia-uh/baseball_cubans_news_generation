@@ -40,7 +40,7 @@ class Armandobot(Configuration):
 
         d = get_date()
 
-        if name == d:
+        if name != d:
             with open('UPDATED','w') as f:
                 f.write('1')
             return False
