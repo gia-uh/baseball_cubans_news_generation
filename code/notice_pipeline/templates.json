@@ -1005,7 +1005,10 @@
                     "{{ lanzador_ganador }} fur el pitcher vencedor, mientras que la derrota corrió a cargo de {{ lanzador_perdedor }}"
                 ]
             }
-        }
+        },
+        "sin_participacion_cubana":[
+            "en esta jornada, ningún equipo con cubanos en su roster disputó encuentros"
+        ]
     },
     "posicion":{
         "1B": ["el primera base", "el inicialista"],

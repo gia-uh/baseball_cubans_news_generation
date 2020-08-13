@@ -151,7 +151,7 @@ class New_Templates(News):
         text = ''
 
         if len(outstandings) == 0:
-            title = 'Sin participación cubana en jornada de las Grandes Ligas'
+            title = random.choice(self._templates['noticia_juego']['titulo']['sin_participacion_cubana'])
             return title
 
 
@@ -641,7 +641,10 @@ class New_Templates(News):
                     paragraphs.append(ps)
 
         if not cont and not all_players:
-            paragraphs.append('En esta jornada, ningún equipo con cubanos en su roster disputó encuentros.')
+            t = random.choice(self._templates['noticia_juego']['sin_participacion_cubana'])
+            c = t[0]
+            t = c.upper() + t[1:]
+            paragraphs.append(t + '.')
 
         complete_new = ''
 
