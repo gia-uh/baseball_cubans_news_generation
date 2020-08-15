@@ -193,17 +193,17 @@ class Scrapper_BR(ScrapperGames):
             batter = details['batter']
             pitcher = details['pitcher']
             if batter in players and players[batter] == 'batter':
-                players_details['hitters'][batter]['plays'].append( details )
+                players_details['hitters'][batter]['plays'].append( details.copy() )
             if pitcher in players and players[pitcher] == 'pitcher':
-                players_details['pitchers'][pitcher]['plays'].append( details )
+                players_details['pitchers'][pitcher]['plays'].append( details.copy() )
             if (batter + '_1') in players and players[(batter + '_1')] == 'batter':
-                players_details['hitters'][(batter + '_1')]['plays'].append( details )
+                players_details['hitters'][(batter + '_1')]['plays'].append( details.copy() )
             if (pitcher + '_1') in players and players[(pitcher + '_1')] == 'pitcher':
-                players_details['pitchers'][(pitcher + '_1')]['plays'].append( details )
+                players_details['pitchers'][(pitcher + '_1')]['plays'].append( details.copy() )
             if (batter + '_2') in players and players[(batter + '_2')] == 'batter':
-                players_details['hitters'][(batter + '_2')]['plays'].append( details )
+                players_details['hitters'][(batter + '_2')]['plays'].append( details.copy() )
             if (pitcher + '_2') in players and players[(pitcher + '_2')] == 'pitcher':
-                players_details['pitchers'][(pitcher + '_2')]['plays'].append( details )
+                players_details['pitchers'][(pitcher + '_2')]['plays'].append( details.copy() )
 
     def _get_play_description(self, play):
         if isinstance(play, dict):
