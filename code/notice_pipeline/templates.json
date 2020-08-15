@@ -880,7 +880,7 @@
                         "{{ jugador }} también jugó en el encuentro en el cual {{ destacados_accion }}",
                         "en la victoria de {{ equipo_ganador }} sobre {{ equipo_perdedor }}, en la cual {{ destacados_accion }}, también vió acción {{ jugador }}",
                         "{{ jugador }} también saltó al césped del terreno de juego en este enfrentamiento",
-                        "Representando a Cuba, otro de los jugadores que participóen el juego fue {{ jugador }}"
+                        "Representando a Cuba, otro de los jugadores que participó en el juego fue {{ jugador }}"
                     ]
                 },
                 "sin_destacados":{
