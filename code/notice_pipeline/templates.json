@@ -776,7 +776,7 @@
                 "dos_destacados":[
                     "{{ jugador_1 }} y {{ jugador_2 }}, los más destacados por Cuba en jornada de las Grandes Ligas",
                     "{{ jugador_1 }} y {{ jugador_2 }}, los mejores jugadores cubanos en jornada de la MLB",
-                    "{{ jugador_1 }} y {{ jugador_2 }}, los que máss sobresalieron en el día por la armada cubana en la MLB"
+                    "{{ jugador_1 }} y {{ jugador_2 }}, los que más sobresalieron en el día por la armada cubana en la MLB"
                 ],
                 "un_destacado":{
                     "bateador":{
@@ -848,7 +848,7 @@
                     "en la jornada jugó solamente un cubano"
                 ],
                 ">1":[
-                    "en esta día participaron {{ cant_jugadores }} jugadores cubanos",
+                    "en este día participaron {{ cant_jugadores }} jugadores cubanos",
                     "en esta jornada jugaron {{ cant_jugadores }} jugadores de la mayor de las antillas"
                 ]
             }
@@ -880,7 +880,7 @@
                         "{{ jugador }} también jugó en el encuentro en el cual {{ destacados_accion }}",
                         "en la victoria de {{ equipo_ganador }} sobre {{ equipo_perdedor }}, en la cual {{ destacados_accion }}, también vió acción {{ jugador }}",
                         "{{ jugador }} también saltó al césped del terreno de juego en este enfrentamiento",
-                        "Representando a Cuba, otro de los jugadores que participóen el juego fue {{ jugador }}"
+                        "Representando a Cuba, otro de los jugadores que participó en el juego fue {{ jugador }}"
                     ]
                 },
                 "sin_destacados":{
