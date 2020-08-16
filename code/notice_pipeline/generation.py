@@ -23,6 +23,11 @@ class New_Templates(News):
         outstandings = self._sorted_for_outstandings
         games_details = self._games_details
 
+        s = set()
+        for _, p, _ in outstandings:
+            name = p.replace('_2', '').replace('_1', '')
+            s.add(name)
+
         date = gyd()
         text = ''
 
