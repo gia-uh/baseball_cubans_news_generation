@@ -19,10 +19,7 @@ class Scrapper_BR(ScrapperGames):
     __slots__ = ('_players', '_ss', '_base_url')
     def __init__(self, players: List[str]):
         super().__init__()
-        if isinstance(players, dict):
-            self._players = list(players.keys())
-        self._players = players
-        self._players = players
+        self._players = players['complete_list']
         self._ss = requests.Session()
         self._ss.headers['User-Agent'] = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Safari/537.36'
         self._ss.headers['Accept-Encoding'] = 'gzip, deflate'

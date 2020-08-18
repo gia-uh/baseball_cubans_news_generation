@@ -582,7 +582,7 @@ class New_Templates(News):
     def _get_text(self):
         player_details = self._player_details
         games_details = self._games_details
-        players_teams = self._players_teams
+        players_teams = self._players_teams['current_year_list']
 
         paragraphs = []
 

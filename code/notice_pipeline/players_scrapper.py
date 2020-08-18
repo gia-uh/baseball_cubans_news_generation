@@ -79,16 +79,20 @@ class Scrapper_for_country(Scrapper):
         players = []
         players_team = {}
 
+        players_team['complete_list'] = []
+        players_team['current_year_list'] = {}
+
         for h in hitters:
             if 'class' not in h:
                 name = h.find('td', {'data-stat': 'player'}).a.get_text()
                 link = h.find('td', {'data-stat': 'player'}).a['href']
                 year_max = h.find('td', {'data-stat': 'year_max'}).get_text()
                 year_max = int(year_max)
+                players_team['complete_list'].append(name)
                 if year_max == year:
                     if name not in players:
                         players.append(name)
-                        players_team[name] = link
+                        players_team['current_year_list'][name] = link
 
         for p in pitchers:
             if 'class' not in p:
@@ -96,15 +100,17 @@ class Scrapper_for_country(Scrapper):
                 link = p.find('td', {'data-stat': 'player'}).a['href']
                 year_max = p.find('td', {'data-stat': 'year_max'}).get_text()
                 year_max = int(year_max)
+                players_team['complete_list'].append(name)
                 if year_max == year:
                     if name not in players:
                         players.append(name)
-                        players_team[name] = link
+                        players_team['current_year_list'][name] = link
+
 
         for p in players:
-            r = session.get(base_url + players_team[p])
+            r = session.get(base_url + players_team['current_year_list'][p])
             bsObj = BeautifulSoup(r.text, PARSER)
             team = bsObj.find('div', {'id': 'info'}).find_all('p')[3].a.get_text()
-            players_team[p] = team
+            players_team['current_year_list'][p] = team
 
         return players_team
