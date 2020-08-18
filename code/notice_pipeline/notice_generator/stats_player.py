@@ -229,7 +229,7 @@ class IP(Entity):
         d = {"IP": ip}
 
         c = '1'
-        if ip != '1.0':
+        if ip != '1':
             c = 'not_1'
 
         return fill_template(random.choice(self._templates['estadisticas']['jugador']['entradas_lanzadas']['complemento'][c]), d)
