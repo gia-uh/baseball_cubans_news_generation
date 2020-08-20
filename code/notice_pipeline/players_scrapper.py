@@ -86,9 +86,10 @@ class Scrapper_for_country(Scrapper):
             if 'class' not in h:
                 name = h.find('td', {'data-stat': 'player'}).a.get_text()
                 link = h.find('td', {'data-stat': 'player'}).a['href']
+                player_id = h.find('td', {'data-stat': 'player'})['data-append-csv']
                 year_max = h.find('td', {'data-stat': 'year_max'}).get_text()
                 year_max = int(year_max)
-                players_team['complete_list'].append(name)
+                players_team['complete_list'].append(player_id)
                 if year_max == year:
                     if name not in players:
                         players.append(name)
@@ -97,10 +98,11 @@ class Scrapper_for_country(Scrapper):
         for p in pitchers:
             if 'class' not in p:
                 name = p.find('td', {'data-stat': 'player'}).a.get_text()
+                player_id = p.find('td', {'data-stat': 'player'})['data-append-csv']
                 link = p.find('td', {'data-stat': 'player'}).a['href']
                 year_max = p.find('td', {'data-stat': 'year_max'}).get_text()
                 year_max = int(year_max)
-                players_team['complete_list'].append(name)
+                players_team['complete_list'].append(player_id)
                 if year_max == year:
                     if name not in players:
                         players.append(name)

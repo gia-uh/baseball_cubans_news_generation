@@ -182,7 +182,7 @@ class New_Templates(News):
 
                     #p = Player(name, player_details['hitters'][name], self.templates)
 
-                    name = name.replace('_1', '').replace('_2', '')
+                    
                     team = player_details['hitters'][name]['team']
 
                     hits = player_details['hitters'][name]['H']
@@ -201,6 +201,8 @@ class New_Templates(News):
                     stats.reverse()
 
                     stat_comp = stats[0][1]
+
+                    name = name.replace('_1', '').replace('_2', '')
 
                     d = {
                         "jugador": name,
@@ -222,6 +224,8 @@ class New_Templates(News):
                     name = outstandings[0][1]
                     team = player_details['pitchers'][name]['team']
                     team_rival = player_details['pitchers'][name]['rival_team']
+
+                    name = name.replace('_1', '').replace('_2', '')
 
                     d = {
                         "jugador": name,

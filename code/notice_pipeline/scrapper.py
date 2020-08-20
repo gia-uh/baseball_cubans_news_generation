@@ -109,13 +109,14 @@ class Scrapper_BR(ScrapperGames):
             link = position.find('a')
             if link is None:
                 continue
+            player_id = position['data-append-csv']
             name = link.get_text()
             name_and_pos = position.get_text().lstrip()
             pos = name_and_pos.replace(name, '').lstrip()
             if pos == 'P':
                 continue
             name = link.get_text()
-            if len(filter_players) > 0 and name not in filter_players:
+            if len(filter_players) > 0 and player_id not in filter_players:
                 continue
             if game_details['uod'] == 2:
                 name = name + '_1'
@@ -147,10 +148,11 @@ class Scrapper_BR(ScrapperGames):
             link = position.find('a')
             if link is None:
                 continue
+            player_id = position['data-append-csv']
             name_and_impact = position.get_text().lstrip()
             name = link.get_text()
             impact = name_and_impact.replace(name, '')
-            if len(filter_players) > 0 and name not in filter_players:
+            if len(filter_players) > 0 and player_id not in filter_players:
                 continue
             if game_details['uod'] == 2:
                 name = name + '_1'
