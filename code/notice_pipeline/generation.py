@@ -88,7 +88,7 @@ class New_Templates(News):
                         for g in all_games:
                             x = (list(game.keys())[0], list(game.keys())[1])
                             y = (list(g.keys())[0], list(g.keys())[1])
-                            if ((x[0] == y[0] and x[1] == y[1]) or (x[1] == y[0] and x[0] == y[1])) and g['uod'] == index:
+                            if ((x[0] == y[0] and x[1] == y[1]) or (x[1] == y[0] and x[0] == y[1])) and g['uod'] == index and not g['checked']:
                                 if g['players']['home'] or g['players']['away']:
                                     g['checked'] = True
                                     all_games_sorted.append(g)
@@ -100,12 +100,25 @@ class New_Templates(News):
                         for g in all_games:
                             x = (list(game.keys())[0], list(game.keys())[1])
                             y = (list(g.keys())[0], list(g.keys())[1])
-                            if ((x[0] == y[0] and x[1] == y[1]) or (x[1] == y[0] and x[0] == y[1])) and g['uod'] == index:
+                            if ((x[0] == y[0] and x[1] == y[1]) or (x[1] == y[0] and x[0] == y[1])) and g['uod'] == index and not g['checked']:
                                 if g['players']['home'] or g['players']['away']:
                                     g['checked'] = True
                                     all_games_sorted.append(g)
-                else:
-                    last.append(game)
+                elif not game['checked']:
+                    other_game_outstanding = False
+                    if game['uod'] == 2 or game['uod'] == 3:
+                        index = 5 - game['uod']
+                        for g in all_games:
+                            x = (list(game.keys())[0], list(game.keys())[1])
+                            y = (list(g.keys())[0], list(g.keys())[1])
+                            if ((x[0] == y[0] and x[1] == y[1]) or (x[1] == y[0] and x[0] == y[1])) and g['uod'] == index and not g['checked']:
+                                if g['players']['home'] and g['players']['home'][0][1] == 1:
+                                    other_game_outstanding = True
+                                elif g['players']['away'] and g['players']['away'][0][1] == 1:
+                                    other_game_outstanding = True
+                    if not other_game_outstanding:
+                        game['checked'] = True
+                        last.append(game)
 
         all_games_sorted.extend(last)
 
