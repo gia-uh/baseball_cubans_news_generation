@@ -509,7 +509,7 @@
                             "pierde":[
                                 "acercar a su equipo en el marcador {{ marcador_equipo }} por {{ marcador_equipo_rival }}",
                                 "poner el juego {{ marcador_equipo }} a {{ marcador_equipo_rival }} favorable a {{ equipo_rival }}",
-                                "acercar a {{ marcador_equipo }} en la pizarra {{ marcador_equipo }} a {{ marcador_equipo_rival }}"
+                                "acercar a {{ equipo }} en la pizarra {{ marcador_equipo }} a {{ marcador_equipo_rival }}"
                             ],
                             "empata":[
                                 "empatar el encuentro a {{ marcador_equipo }}",
