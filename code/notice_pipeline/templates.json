@@ -887,14 +887,14 @@
                     "varios_jugadores":[
                         "{{ equipo_ganador }} venció {{ carreras_ganador }} por {{ carreras_perdedor }} al conjunto de {{ equipo_perdedor }}. Por Cuba, en este encuentro participaron {{ jugadores }}",
                         "en el estadio {{ estadio }}, {{ jugadores }} vieron acción en la victoria de {{ equipo_ganador }} sobre {{ equipo_perdedor }} {{ carreras_ganador }} por {{ carreras_perdedor }}",
-                        "{{ jugadores }} fueron los cubanos que jugaron en el encuentro que enfrentó a los equipos de {{ equipo_ganador }} y {{ equipo_perdedor }}, con victoria para el primero",
-                        "en el enfrentamiento que tuvieron los conjuntos de {{ equipo_ganador }} y {{ equipo_perdedor }}, hicieron su aparición {{ jugadores }}",
+                        "{{ jugadores }} fueron los cubanos que jugaron en el encuentro que enfrentó a los equipos de {{ equipo_ganador }} y {{ equipo_perdedor }}, con victoria para el primero {{ carreras_ganador }} por {{ carreras_perdedor }}",
+                        "en el enfrentamiento que tuvieron los conjuntos de {{ equipo_ganador }} y {{ equipo_perdedor }}, hicieron su aparición {{ jugadores }}. La victoria correspondió a {{ equipo_ganador }} {{ carreras_ganador }} por {{ carreras_perdedor }}",
                         "{{ jugadores }} tomaron parte en el partido de béisbol que {{ equipo_ganador }} le ganó a {{ equipo_perdedor }} {{ carreras_ganador }} por {{ carreras_perdedor }}"
                     ],
                     "solo_un_jugador":[
                         "{{ equipo_ganador }} venció {{ carreras_ganador }} por {{ carreras_perdedor }} al conjunto de {{ equipo_perdedor }}. Por Cuba, en este encuentro participó {{ jugador }}",
                         "en el estadio {{ estadio }}, {{ jugador }} vió acción en la victoria de {{ equipo_ganador }} sobre {{ equipo_perdedor }} {{ carreras_ganador }} por {{ carreras_perdedor }}",
-                        "{{ jugador }} fue el cubano que jugó en el encuentro que enfrentó a los equipos de {{ equipo_ganador }} y {{ equipo_perdedor }}, con victoria para el primero",
+                        "{{ jugador }} fue el cubano que jugó en el encuentro que enfrentó a los equipos de {{ equipo_ganador }} y {{ equipo_perdedor }}, con victoria para el primero {{ carreras_ganador }} por {{ carreras_perdedor }}",
                         "en el enfrentamiento que tuvieron los conjuntos de {{ equipo_ganador }} y {{ equipo_perdedor }}, hizo su aparición {{ jugador }}",
                         "{{ jugador }} tomó parte en el partido de béisbol que {{ equipo_ganador }} le ganó a {{ equipo_perdedor }} {{ carreras_ganador }} por {{ carreras_perdedor }}"
                     ]
@@ -916,13 +916,13 @@
                 "sin_destacados":{
                     "varios_jugadores":[
                         "{{ equipo_ganador }} venció {{ carreras_ganador }} por {{ carreras_perdedor }} a {{ equipo_perdedor }}, en el primer encuentro del doble disputado entre estos dos conjuntos. {{ jugadores }} fueron los jugadores cubanos que vieron acción en este juego",
-                        "en el primero de dos juegos disputados entre {{ equipo_ganador }} y {{ equipo_perdedor }}, {{ jugadores }} fueron los representantes cubanos en la victoria de {{ equipo_ganador }}, {{ carreras_ganador }} por {{ carreras_perdedor }}",
-                        "{{ jugadores }} fueron los jugadores cubanos que jugaron en el primer encuentro del doble disputado entre {{ equipo_ganador }} y {{ equipo_perdedor }}"
+                        "en el primero de dos juegos disputados entre {{ equipo_ganador }} y {{ equipo_perdedor }}, {{ jugadores }} fueron los representantes cubanos en la victoria de {{ equipo_ganador }} {{ carreras_ganador }} por {{ carreras_perdedor }}",
+                        "{{ jugadores }} fueron los jugadores cubanos que jugaron en el primer encuentro del doble disputado entre {{ equipo_ganador }} y {{ equipo_perdedor }}, con triunfo para el primero {{ carreras_ganador }} por {{ carreras_perdedor }}"
                     ],
                     "solo_un_jugador":[
                         "{{ equipo_ganador }} venció {{ carreras_ganador }} por {{ carreras_perdedor }} a {{ equipo_perdedor }}, en el primer encuentro del doble disputado entre estos dos conjuntos. {{ jugador }} fue el jugador cubano que vió acción en este juego",
-                        "en el primero de dos juegos disputados entre {{ equipo_ganador }} y {{ equipo_perdedor }}, {{ jugador }} fue el representante cubano en la victoria de {{ equipo_ganador }}, {{ carreras_ganador }} por {{ carreras_perdedor }}",
-                        "{{ jugador }} fue el jugador cubano que jugó en el primer encuentro del doble disputado entre {{ equipo_ganador }} y {{ equipo_perdedor }}"
+                        "en el primero de dos juegos disputados entre {{ equipo_ganador }} y {{ equipo_perdedor }}, {{ jugador }} fue el representante cubano en la victoria de {{ equipo_ganador }} {{ carreras_ganador }} por {{ carreras_perdedor }}",
+                        "{{ jugador }} fue el jugador cubano que jugó en el primer encuentro del doble disputado entre {{ equipo_ganador }} y {{ equipo_perdedor }}, con triunfo para el primero {{ carreras_ganador }} por {{ carreras_perdedor }}"
                     ]
                 }
             },
@@ -932,7 +932,7 @@
                     "en el segundo encuentro de la jornada para {{ equipo_ganador }} y {{ equipo_perdedor }}, la victoria fue para {{ equipo_ganador }} {{ carreras_ganador }} por {{ carreras_perdedor }}, juego en el cual {{ destacados_accion }}"
                 ],
                 "sin_destacados":[
-                    "{{ equipo_ganador }} venció a {{ equipo_perdedor }} en el segundo encuentro del doble",
+                    "{{ equipo_ganador }} venció a {{ equipo_perdedor }} {{ carreras_ganador }} por {{ carreras_perdedor }} en el segundo encuentro del doble",
                     "en el segundo encuentro de la jornada para {{ equipo_ganador }} y {{ equipo_perdedor }}, la victoria fue para {{ equipo_ganador }} {{ carreras_ganador }} por {{ carreras_perdedor }}"
                 ]
             },
@@ -957,12 +957,12 @@
                     "varios_jugadores":[
                         "{{ equipo_ganador }} venció {{ carreras_ganador }} por {{ carreras_perdedor }} al conjunto de {{ equipo_perdedor }}. Los cubanos que juegan para {{ equipo }}, {{ jugadores }}, no tuvieron participación en el encuentro",
                         "{{ jugadores }} no vieron acción en el encuentro de su equipo, {{ equipo }}. En este encuentro, {{ equipo_ganador }} se llevó la victoria {{ carreras_ganador }} por {{ carreras_perdedor }} frente a {{ equipo_perdedor }}",
-                        "los cubanos {{ jugadores }} no disputaron el enfrentamiento de {{ equipo_ganador }} y {{ equipo_perdedor }}, con victoria para el primero"
+                        "los cubanos {{ jugadores }} no disputaron el enfrentamiento de {{ equipo_ganador }} y {{ equipo_perdedor }}, con victoria para el primero {{ carreras_ganador }} por {{ carreras_perdedor }}"
                     ],
                     "un_solo_jugador":[
                         "{{ equipo_ganador }} venció {{ carreras_ganador }} por {{ carreras_perdedor }} al conjunto de {{ equipo_perdedor }}. El cubano que juega para {{ equipo }}, {{ jugador }}, no tuvo participación en el encuentro",
                         "{{ jugador }} no vió acción en el encuentro de su equipo, {{ equipo }}. En este encuentro, {{ equipo_ganador }} se llevó la victoria {{ carreras_ganador }} por {{ carreras_perdedor }} frente a {{ equipo_perdedor }}",
-                        "el cubano {{ jugador }} no disputó el enfrentamiento de {{ equipo_ganador }} y {{ equipo_perdedor }}, con victoria para el primero"
+                        "el cubano {{ jugador }} no disputó el enfrentamiento de {{ equipo_ganador }} y {{ equipo_perdedor }}, con victoria para el primero {{ carreras_ganador }} por {{ carreras_perdedor }}"
                     ]
                 },
                 "varios_equipos":[
@@ -976,12 +976,12 @@
                     "varios_jugadores":[
                         "{{ equipo_ganador }} venció {{ carreras_ganador }} por {{ carreras_perdedor }} al conjunto de {{ equipo_perdedor }} en el primer encuentro del doble disputado entre estos dos equipos. Los cubanos que juegan para {{ equipo }}, {{ jugadores }}, no tuvieron participación en el encuentro",
                         "{{ jugadores }} no vieron acción en el primer encuentro del doble de su equipo, {{ equipo }}. En este encuentro, {{ equipo_ganador }} se llevó la victoria {{ carreras_ganador }} por {{ carreras_perdedor }} frente a {{ equipo_perdedor }}",
-                        "los cubanos {{ jugadores }} no disputaron el primer enfrentamiento de {{ equipo_ganador }} y {{ equipo_perdedor }} en la doble jornada, con victoria para el primero"
+                        "los cubanos {{ jugadores }} no disputaron el primer enfrentamiento de {{ equipo_ganador }} y {{ equipo_perdedor }} en la doble jornada, con victoria para el primero {{ carreras_ganador }} por {{ carreras_perdedor }}"
                     ],
                     "un_solo_jugador":[
                         "{{ equipo_ganador }} venció {{ carreras_ganador }} por {{ carreras_perdedor }} al conjunto de {{ equipo_perdedor }} en el primer encuentro del doble disputado entre estos dos equipos. El cubano que juega para {{ equipo }}, {{ jugador }}, no tuvó participación en el encuentro",
                         "{{ jugador }} no vió acción en el primer encuentro del doble de su equipo, {{ equipo }}. En este encuentro, {{ equipo_ganador }} se llevó la victoria {{ carreras_ganador }} por {{ carreras_perdedor }} frente a {{ equipo_perdedor }}",
-                        "el cubano {{ jugador }} no disputó el primer enfrentamiento de {{ equipo_ganador }} y {{ equipo_perdedor }} en la doble jornada, con victoria para el primero"
+                        "el cubano {{ jugador }} no disputó el primer enfrentamiento de {{ equipo_ganador }} y {{ equipo_perdedor }} en la doble jornada, con victoria para el primero {{ carreras_ganador }} por {{ carreras_perdedor }}"
                     ]
                 },
                 "varios_equipos":[
