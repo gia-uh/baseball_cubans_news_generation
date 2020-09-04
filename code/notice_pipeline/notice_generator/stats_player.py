@@ -266,7 +266,7 @@ class Impact(Entity):
             g = 'W'
         elif 'L' in impact:
             g = 'L'
-        elif "S" in impact:
+        elif "S" in impact and "BS" not in impact:
             g = 'S'
 
         if g != '':
