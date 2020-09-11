@@ -635,10 +635,16 @@
                         "conectó de sacrificio",
                         "bateó de sacrificio"
                     ],
-                    "linea_out":[
-                        "provocó que {{ bateador }} fallara en línea de out",
-                        "hizo fallar a {{ bateador }} con línea de out"
-                    ],
+                    "linea_out":{
+                        "lanzador":[
+                            "provocó que {{ bateador }} fallara en línea de out",
+                            "hizo fallar a {{ bateador }} con línea de out"
+                        ],
+                        "bateador":[
+                            "falló con una línea que finalmente sirvió de sacrificio",
+                            "bateó una línea de sacrificio"
+                        ]
+                    },
                     "popfly":[
                         "dominó a {{ bateador }} con un elevado corto de out",
                         "hizo fallar a {{ bateador }} con globito de out",

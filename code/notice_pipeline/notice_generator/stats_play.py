@@ -197,8 +197,11 @@ class Event(Stats):
         elif 'Sacrifice' in event and self._player_dict['position'] != 'P':
             return random.choice(self._templates['estadisticas']['jugada']['evento']['accion']['sacrificio'])
 
-        elif event == 'Lineout':
-            return fill_template(random.choice(self._templates['estadisticas']['jugada']['evento']['accion']['linea_out']), d)
+        elif event == 'Lineout' and self._player_dict['position'] == 'P':
+            return fill_template(random.choice(self._templates['estadisticas']['jugada']['evento']['accion']['linea_out']['lanzador']), d)
+
+        elif event == 'Lineout' and self._player_dict['position'] != 'P':
+            return fill_template(random.choice(self._templates['estadisticas']['jugada']['evento']['accion']['linea_out']['bateador']), d)
 
         elif event == 'Popfly':
             return fill_template(random.choice(self._templates['estadisticas']['jugada']['evento']['accion']['popfly']), d)
