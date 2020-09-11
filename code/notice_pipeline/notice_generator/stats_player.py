@@ -345,7 +345,6 @@ class Highlights_Player(Highlights):
 
             if impact == 'SV':
                 l = []
-
                 f = [
                     ' se apuntó el salvamento para su equipo',
                     ' salvó el juego',
