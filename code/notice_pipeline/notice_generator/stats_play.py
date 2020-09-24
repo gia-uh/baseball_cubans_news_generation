@@ -212,7 +212,10 @@ class Direction(Stats):
         if self._play_dict['play_desc']['direction'] == '':
             return ''
         direction = self._play_dict['play_desc']['direction'].split('-')[0]
-        direction = random.choice(self._templates['direccion'][direction])
+        if direction in self._templates['direccion']:
+            direction = random.choice(self._templates['direccion'][direction])
+        else:
+            return ''
 
         d = {
             'direccion': direction
