@@ -58,9 +58,9 @@ class Scrapper_BR(ScrapperGames):
         divs = scorebox.findAll('div')
 
         game_details[away]['season_score'] = divs[5].get_text()
-        game_details[home]['season_score'] = divs[12].get_text()
+        game_details[home]['season_score'] = divs[11].get_text()
 
-        scorebox_meta = bsObj.find('div', {'class': 'scorebox_meta'}).find_all('div')[2]
+        scorebox_meta = bsObj.find('div', {'class': 'scorebox_meta'}).find_all('div')[3]
 
         stadium = scorebox_meta.get_text()
         stadium = stadium.replace('Venue: ', '')

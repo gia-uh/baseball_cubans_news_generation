@@ -625,12 +625,18 @@
                         "dominó por la vía de los strikes a {{ bateador }}",
                         "propinó tres strikes a {{ bateador }}"
                     ],
-                    "flyball":[
-                        "provocó que {{ bateador }} fallara con un fly de out",
-                        "hizo fallar a {{ bateador }} con elevado de out",
-                        "eliminó a {{ bateador }} con fly de out",
-                        "dominó a {{ bateador }} con elevado de out"
-                    ],
+                    "flyball":{
+                        "lanzador":[
+                            "provocó que {{ bateador }} fallara con un fly de out",
+                            "hizo fallar a {{ bateador }} con elevado de out",
+                            "eliminó a {{ bateador }} con fly de out",
+                            "dominó a {{ bateador }} con elevado de out"    
+                        ],
+                        "bateador":[
+                            "elevó un fly de sacrificio",
+                            "conectó un elevado de sacrificio"
+                        ]
+                    },
                     "sacrificio":[
                         "conectó de sacrificio",
                         "bateó de sacrificio"
